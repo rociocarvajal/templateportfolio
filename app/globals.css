@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -40,9 +41,9 @@
 
 :root {
   color-scheme: light;
-  --paper: #f5f2eb;
+  --paper: #f5f7fa;
   --paper-deep: #ece8df;
-  --navy: #142b44;
+  --navy: #0f2540;
   --blue: #3c6f9b;
   --blue-light: #a7c8df;
   --blue-pale: #dce7ed;
@@ -76,14 +77,43 @@ html {
   scroll-padding-top: 6rem;
 }
 
+/* Fuentes personalizadas */
+@font-face {
+    font-family: 'Faith';
+    src: url('/fonts/faith.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Burgues';
+    src: url('/fonts/burgues.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "liga" 1, "calt" 1, "dlig" 1, "swsh" 1;
+}
+
+.font-faith {
+    font-family: 'Faith', sans-serif;
+}
+
+.font-burgues {
+    font-family: 'Burgues', serif;
+}
+
+.font-space-mono {
+  font-family: 'Space Mono', monospace;
+}
+
 body {
   min-height: 100vh;
   background: var(--paper);
   color: var(--navy);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, Space Mono, ;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+
 
 ::selection {
   background: var(--blue-light);
