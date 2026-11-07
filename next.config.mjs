@@ -1,12 +1,10 @@
-/** @type {import('next').NextConfig} */
-
 const basePath = "/templateportfolio"
 
 const nextConfig = {
   output: "export",
   images: { unoptimized: true },
-  basePath: "/templateportfolio",
-  assetPrefix: "/templateportfolio/",
+  basePath,
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
 }
 
 export default nextConfig

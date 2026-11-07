@@ -1,10 +1,8 @@
-const basePath = "/templateportfolio"
-
-const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
-  basePath,
-  env: { NEXT_PUBLIC_BASE_PATH: basePath },
+/** @type {import('postcss-load-config').Config} */
+const config = {
+  plugins: {
+    '@tailwindcss/postcss': {},
+  },
 }
 
-export default nextConfig
+export default config
