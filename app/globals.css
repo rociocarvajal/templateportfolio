@@ -80,14 +80,14 @@ html {
 /* Fuentes personalizadas */
 @font-face {
     font-family: 'Faith';
-    src: url('/fonts/faith.otf') format('opentype');
+    src: url('/templateportfolio/fonts/faith.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Burgues';
-    src: url('/fonts/burgues.otf') format('opentype');
+    src: url('/templateportfolio/fonts/burgues.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-feature-settings: "liga" 1, "calt" 1, "dlig" 1, "swsh" 1;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/constants/base-path"
 
 export function PortfolioHero() {
   return (
@@ -42,7 +43,7 @@ export function PortfolioHero() {
         aria-hidden="true"
       >
         <Image
-          src="/images/ilustracion.svg"
+          src={withBasePath("/images/ilustracion.svg")}
           alt=""
           fill
           sizes="(max-width: 1024px) 60vw, 720px"
@@ -55,7 +56,7 @@ export function PortfolioHero() {
         {/* ILUSTRACIÓN DE LA MUJER */}
         <div className="relative z-10 h-[380px] w-full max-w-[420px]">
           <Image
-            src="/images/ilustracion-mujer.svg"
+            src={withBasePath("/images/ilustracion-mujer.svg")}
             alt="Ilustración de una mujer"
             fill
             priority
